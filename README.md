@@ -64,8 +64,8 @@ This system is perfect for:
 ## 💬 Support
 
 Need help or have questions?  
-📧 Email us at: support@yourcompany.com  
-📞 Call: +123-456-7890
+📧 Email us at: 
+📞 Call: 
 
 ---
 

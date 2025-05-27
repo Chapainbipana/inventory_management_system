@@ -94,7 +94,7 @@
                     <x-input-label for="name" :value="__('Name')" class="!text-slate-600" />
                     <x-text-input id="name"
                         class="block mt-1 w-full !text-slate-400 !bg-white !border-gray-300 focus:ring-gray-500 focus:border-gray-500"
-                        :error="$errors->has('name')" type="text" name="first_name" :value="old('name')" autofocus
+                        :error="$errors->has('name')" type="text" name="name" :value="old('name')" autofocus
                         autocomplete="given-name" />
                     <x-input-error :messages="$errors->get('name')" class="mt-2" />
                 </div>
@@ -111,11 +111,11 @@
 
                 <!-- Phone Number -->
                 <div>
-                    <x-input-label for="phone_number" :value="__('Phone Number')" class="!text-slate-600" />
-                    <x-text-input id="phone_number"
+                    <x-input-label for="phone" :value="__('Phone Number')" class="!text-slate-600" />
+                    <x-text-input id="phone"
                         class="block mt-1 w-full !text-slate-400 !bg-white !border-gray-300 focus:ring-gray-500 focus:border-gray-500"
-                        :error="$errors->has('phone_number')" type="text" name="phone_number" :value="old('phone_number')" autocomplete="tel" />
-                    <x-input-error :messages="$errors->get('phone_number')" class="mt-2" />
+                        :error="$errors->has('phone')" type="text" name="phone" :value="old('phone')" autocomplete="tel" />
+                    <x-input-error :messages="$errors->get('phone')" class="mt-2" />
                 </div>
 
                 {{-- <!-- City -->
