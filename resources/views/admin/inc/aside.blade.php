@@ -5,8 +5,8 @@
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
             <div class="app-brand demo">
                 <a href="/" class="app-brand-link">
-                    <img src="{{ asset('backend/assets/img/Logo_Crafts-removebg.png') }}" alt="" width="100"
-                        height="70">
+                    {{-- <img src="{{ asset('backend/assets/img/Logo_Crafts-removebg.png') }}" alt="" width="100"
+                        height="70"> --}}
                 </a>
 
                 {{-- <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -35,12 +35,12 @@
                     </a>
                     <ul class="menu-sub">
                         <li class="menu-item">
-                            <a href="{{ route('file.create') }}" class="menu-link">
+                            <a href=" " class="menu-link">
                                 <div data-i18n="Account">Create</div>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="{{ route('file.index') }}" class="menu-link">
+                            <a href="" class="menu-link">
                                 <div data-i18n="Notifications">Index</div>
                             </a>
                         </li>
@@ -57,12 +57,12 @@
                     </a>
                     <ul class="menu-sub">
                         <li class="menu-item">
-                            <a href="{{route('productCategory.create') }}" class="menu-link">
+                            <a href="" class="menu-link">
                                 <div data-i18n="Accordion">Create</div>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="{{route('productCategory.index') }}" class="menu-link">
+                            <a href="" class="menu-link">
                                 <div data-i18n="Alerts">Index</div>
                             </a>
                         </li>
@@ -77,12 +77,12 @@
                     </a>
                     <ul class="menu-sub">
                         <li class="menu-item">
-                            <a href="{{route('product.create')}}" class="menu-link">
+                            <a href="" class="menu-link">
                                 <div data-i18n="Accordion">Create</div>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="{{route('product.index')}}" class="menu-link">
+                            <a href="" class="menu-link">
                                 <div data-i18n="Alerts">Index</div>
                             </a>
                         </li>
@@ -95,7 +95,7 @@
                     </a>
                     <ul class="menu-sub">
                         <li class="menu-item">
-                            <a href="{{ route('customerList') }}" class="menu-link">
+                            <a href="" class="menu-link">
                                 <div data-i18n="Alerts">Index</div>
                             </a>
                         </li>
@@ -108,7 +108,7 @@
                     </a>
                     <ul class="menu-sub">
                         <li class="menu-item">
-                            <a href="{{ route('order.index') }}" class="menu-link">
+                            <a href="" class="menu-link">
                                 <div data-i18n="Alerts">Index</div>
                             </a>
                         </li>
@@ -121,7 +121,7 @@
                     </a>
                     <ul class="menu-sub">
                         <li class="menu-item">
-                            <a href="{{ route('revenue.index') }}" class="menu-link">
+                            <a href="" class="menu-link">
                                 <div data-i18n="Alerts">Index</div>
                             </a>
                         </li>
