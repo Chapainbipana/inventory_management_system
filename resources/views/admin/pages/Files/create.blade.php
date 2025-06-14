@@ -7,7 +7,7 @@
                 <h5 class="mb-0">Create Files</h5>
             </div>
             <div class="card-body">
-                <form enctype="multipart/form-data" method="post" action="{{ route('file.store') }}">
+                <form enctype="multipart/form-data" method="post" action="{{ route('adminfile.store') }}">
                     @csrf
                     <div class="mb-3">
                         <label class="form-label" for="basic-icon-default-fullname">Title</label>

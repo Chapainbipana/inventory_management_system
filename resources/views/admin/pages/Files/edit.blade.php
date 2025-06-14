@@ -1,7 +1,7 @@
 @extends('admin.inc.main')
 @section('container')
     <div class="container mt-3">
-        <a href="{{ route('file.index') }}" class="btn btn-primary my-3">Back</a>
+        <a href="{{ route('adminfile.index') }}" class="btn btn-primary my-3">Back</a>
         <div class="card mb-4">
 
             <div class="card-header d-flex justify-content-between align-items-center"
@@ -9,7 +9,7 @@
                 <h5 class="mb-0">Update File</h5>
             </div>
             <div class="card-body">
-                <form enctype="multipart/form-data" method="post" action="{{ route('file.update', $file->id) }}">
+                <form enctype="multipart/form-data" method="post" action="{{ route('adminfile.update', $file->id) }}">
                     @csrf
                     @method('PUT')
                     <div class="mb-3">
