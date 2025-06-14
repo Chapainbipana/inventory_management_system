@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\file;
 use App\Models\product_category;
 use Illuminate\Http\Request;
 
@@ -23,7 +24,7 @@ class AdminProductCategoryController extends Controller
      */
     public function create()
     {
-        $files = File::all(); 
+        $files = file::all(); 
         return view('admin.pages.ProductCategoryPages.create', compact('files'));
    }
 
