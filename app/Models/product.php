@@ -19,4 +19,8 @@ class product extends Model
     {
         return $this->belongsTo(product_category::class, 'category_id');
     }
+    public function stock()
+{
+    return $this->hasOne(Stock::class);
+}
 }
