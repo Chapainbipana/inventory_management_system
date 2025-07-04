@@ -19,6 +19,10 @@ class product extends Model
     {
         return $this->belongsTo(product_category::class, 'category_id');
     }
+    public function price()
+  {
+    return $this->hasOne(Price::class);
+   }
     public function stock()
 {
     return $this->hasOne(Stock::class);

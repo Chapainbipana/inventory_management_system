@@ -13,11 +13,10 @@
         {{ session('success') }}
     </div>
 @endif
-    <a href="{{ route('product.index') }}" class="btn btn-primary my-3">Back</a>
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-   
-            <form action="{{route('product.store')}}" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
+
+<main class="container my-3">
+        <a href="{{ route('product.index') }}" class="btn btn-primary my-3">Back</a>
+       <form action="{{route('product.store')}}" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
                 @csrf
 
                 <div class="card shadow-lg border-0">
@@ -64,7 +63,7 @@
                             <select name="category_id" id="category_id" class="form-control @error('category_id') is-invalid @enderror" required>
                                 <option value="" disabled selected>Select a category</option>
                                 @foreach($category as $value)
-                                    <option value="{{ $value->id }}" {{ old('category_id') == $value->id ? 'selected' : '' }}>{{ $value->title }}</option>
+                                    <option value="{{ $value->id }}" {{ old('category_id') == $value->id ? 'selected' : '' }}>{{ $value->name }}</option>
                                 @endforeach
                             </select>
                             @error('category_id')
@@ -169,8 +168,8 @@
                     </div>
                 </div>
 
-            </form>
-        </div>
-    </div>
-</div>
+            </form>   
+
+    </main>
+    
 @endsection

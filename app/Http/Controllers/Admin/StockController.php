@@ -55,7 +55,15 @@ class StockController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $request->validate([
+        'quantity' => 'required|integer|min:0'
+    ]);
+
+    $stock = Stock::findOrFail($id);
+    $stock->quantity = $request->quantity;
+    $stock->save();
+
+    return redirect()->back()->with('message', 'Stock updated successfully!');
     }
 
     /**
@@ -63,6 +71,9 @@ class StockController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+         $stock = Stock::findOrFail($id);
+         $stock->delete();
+
+          return redirect()->back()->with('message', 'Stock record deleted successfully!');
     }
 }

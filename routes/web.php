@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AdminProductCategoryController;
 use App\Http\Controllers\Admin\AdminProductController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\fileController;
+use App\Http\Controllers\Admin\StockController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,6 +27,8 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
      Route::resource('adminfile', fileController::class);
     Route::resource('/productCategory', AdminProductCategoryController::class);
     Route::resource('product', AdminProductController::class);
+    Route::resource('stock', StockController::class); // already includes update
+
     // Route::resource('admin/order', adminOrderController::class);
 });
 

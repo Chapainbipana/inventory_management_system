@@ -13,10 +13,13 @@
         {{ session('success') }}
     </div>
 @endif
+
+
     <a href="{{ route('product.create') }}" class="btn btn-primary my-3">Add</a>
     <div class="table-responsive">
-        <table class="table table-bordered table-striped table-hover">
-            <thead class="table-dark">
+       <table class="table table-secondary 
+         table-hover table-bordered table-sm table-responsive-sm">
+            <thead>
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
@@ -34,13 +37,13 @@
                         <td>{{ $product->id }}</td>
                         <td>{{ $product->name }}</td>
                         <td>{{ $product->description }}</td>
-                        <td>{{ $product->price }}</td>
-                        <td>{{ $product->stock }}</td>
+                        <td>{{ $product->price->amount }}</td>
+                        <td>{{ $product->stock->quantity }}</td>
                         <td>
                             <img src="{{asset('uploads/' . $product->image)}}" alt="Product Image" width="50">
 
                         </td>
-                        <td>{{ $product->category->title ?? 'No Category' }}</td>
+                        <td>{{ $product->category->name ?? 'No Category' }}</td>
                         <td>
                             <!-- Action Buttons -->
                             <a href="{{ route('product.show', $product->id) }}" class="btn btn-info btn-sm">Show</a>

@@ -12,6 +12,10 @@
 
 
     <div class="container my-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">ProductCategory Page</h5>
+                    <a href="" class="btn btn-primary">Manage</a>
+                </div>
         <a href="{{ route('productCategory.create') }}" class="btn btn-primary my-4">Add</a>
         <table class="table table-secondary 
          table-hover table-bordered table-sm table-responsive-sm">

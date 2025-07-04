@@ -28,7 +28,7 @@
                             </a>
                         </td>
                         <td>
-                            <a href="{{ route('file.edit', $file->id) }}" class="btn btn-primary btn-sm">Edit</a>
+                            <a href="{{ route('adminfile.edit', $file->id) }}" class="btn btn-primary btn-sm">Edit</a>
 
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal"
@@ -52,7 +52,7 @@
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Close</button>
-                                            <form action="{{ route('file.destroy', $file->id) }}" method="POST"
+                                            <form action="{{ route('adminfile.destroy', $file->id) }}" method="POST"
                                                 enctype="multipart/form-data">
                                                 @csrf
                                                 @method('DELETE')

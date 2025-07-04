@@ -13,9 +13,8 @@
         {{ session('success') }}
     </div>
 @endif
+<main class="container my-3">
     <a href="{{ route('product.index') }}" class="btn btn-primary my-3">Back</a>
-    <div class="row justify-content-center">
-        <div class="col-md-8">
             <form action="{{ route('product.update', $product->id) }}" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
                 @csrf
                 @method('PUT')
@@ -172,7 +171,6 @@
                     </div>
                 </div>
             </form>
-        </div>
-    </div>
-</div>
+        
+</main>
 @endsection

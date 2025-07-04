@@ -26,19 +26,19 @@
                 
                 <div class="card-body">
 
-                    {{-- <div class="mb-3">
+                     <div class="mb-3">
                         <label class="form-label" for="basic-default-fullname">Product Category Name</label>
                         <input type="text" name="title" class="form-control" id="basic-default-fullname" />
-                    </div> --}}
+                    </div> 
 
-                    <div class="mb-3">
+                    {{-- <div class="mb-3">
                         <label class="form-label" for="basic-default-category">Product Category</label>
                         <select name="title" class="form-control" id="basic-default-category">
                             <option value="Clothing">Clothing</option>
                             <option value="Art and Craft">Art and Craft</option>
                             <option value="Accessories">Accessories</option>
                         </select>
-                    </div>
+                    </div> --}}
                     
 
                     <div class="mb-3">

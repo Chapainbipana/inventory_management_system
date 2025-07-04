@@ -45,7 +45,7 @@ class fileController extends Controller
         $file->title = $request->title;
         $file->user_id = Auth::user()->id;
         $file->save();
-        return redirect('/admin/file')->with('message', 'uploaded Succesfully');
+        return redirect('/adminfile')->with('message', 'uploaded Succesfully');
   
     }
 

@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class stock extends Model
 {
-    protected $table = 'price'; // Optional if the table name follows Laravel conventions
+    protected $table = 'stock'; // Optional if the table name follows Laravel conventions
 
     protected $fillable = [
         'id',
-        'amount',
+        'quantity',
         'product_id'
     ];
     public function product()
