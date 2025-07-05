@@ -112,7 +112,7 @@
                 <li class="menu-item">
                     <a href="javascript:void(0)" class="menu-link menu-toggle">
                         <i class="menu-icon tf-icons bx bx-box"></i>
-                        <div data-i18n="User interface">Customers</div>
+                        <div data-i18n="User interface">user</div>
                     </a>
                     <ul class="menu-sub">
                         <li class="menu-item">
@@ -135,10 +135,64 @@
                         </li>
                     </ul>
                 </li>
+                {{-- vender --}}
+                <li class="menu-item">
+                    <a href="javascript:void(0)" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons bx bx-box"></i>
+                        <div data-i18n="User interface">Vender</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a href="" class="menu-link">
+                                <div data-i18n="Alerts">Index</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                {{-- supplier --}}
+                <li class="menu-item">
+                    <a href="javascript:void(0)" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons bx bx-box"></i>
+                        <div data-i18n="User interface">Supplier</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a href="" class="menu-link">
+                                <div data-i18n="Alerts">Index</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
                 <li class="menu-item">
                     <a href="javascript:void(0)" class="menu-link menu-toggle">
                         <i class="menu-icon tf-icons bx bx-box"></i>
                         <div data-i18n="User interface">Revenue</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a href="" class="menu-link">
+                                <div data-i18n="Alerts">Index</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="javascript:void(0)" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons bx bx-box"></i>
+                        <div data-i18n="User interface">Purchase</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a href="" class="menu-link">
+                                <div data-i18n="Alerts">Index</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="javascript:void(0)" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons bx bx-box"></i>
+                        <div data-i18n="User interface">Sales</div>
                     </a>
                     <ul class="menu-sub">
                         <li class="menu-item">

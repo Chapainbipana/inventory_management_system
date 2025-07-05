@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->enum('role', ['admin', 'vendor', 'supplier'])->default('vendor');
+            $table->enum('role', ['admin', 'vendor', 'supplier','user'])->default('vendor');
             $table->rememberToken();
             $table->timestamps();
         });
