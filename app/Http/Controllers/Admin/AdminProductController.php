@@ -89,7 +89,7 @@ class AdminProductController extends Controller
      */
     public function edit(string $id)
     {
-        $product = Product::with('category:id,title')->findOrFail($id); // Fetch the product with its category
+        $product = Product::with('category:id,name')->findOrFail($id); // Fetch the product with its category
         $categories = Product_category::all(['id', 'name']); // Fetch all categories for the dropdown
         $files = File::all(); // or however you fetch the files
         

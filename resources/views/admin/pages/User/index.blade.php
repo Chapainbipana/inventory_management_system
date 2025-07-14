@@ -18,25 +18,25 @@
                     <th scope="col">City</th>
                     <th scope="col">Address</th>
                     <th scope="col">Image</th>
-                    <th scope="col"></th>
+                    <th scope="col">Action</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach ($users as $user)
                     <tr>
                         <th scope="row">{{ $loop->iteration }}</th>
-                        <td>{{ $user->first_name }} {{ $user->last_name }}</td>
-                        <td>{{ $user->phone_number }}</td>
-                        <td>{{ $user->email }}</td>
-                        <td>{{ $user->city }}</td>
+                        <td>{{ $user->name }}</td>
+                        <td>{{ $user->phone}}</td>
                         <td>{{ $user->address }}</td>
+                        <td>{{ $user->email }}</td>
+                        <td>{{ $user->role }}</td>
                         <td><a target="_blank" href="{{ asset('uploads/' . $user->image) }}">
                                 <img src="{{ asset('uploads/' . $user->image) }}" alt="" width="100px"
                                     height="100px">
                             </a>
                         </td>
                         <td>
-                            <a href="" class="btn btn-primary btn-sm">Orders</a>
+                            <a href="" class="btn btn-primary btn-sm">Edit</a>
                         </td>
                     </tr>
                 @endforeach
